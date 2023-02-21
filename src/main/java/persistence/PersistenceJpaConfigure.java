@@ -23,9 +23,9 @@ public class PersistenceJpaConfigure {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/persistence");
-		dataSource.setUsername("phu_admin");
+		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
+		dataSource.setUsername("postgres");
 		dataSource.setPassword("1234");
 		return dataSource;
 	}
